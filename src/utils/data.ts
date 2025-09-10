@@ -39,7 +39,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Collaborative Whiteboard (Collab-Board)",
     description: "A real-time collaborative whiteboard enabling users to draw, add shapes, and interact on an infinite canvas.",
-    image: "/images/project1.jpg",
+    image: "/collabBoard.jpg",
     technologies: ["Next.js", "TailWind CSS", "Node.js", "MongoDB", "Redis", "Vercel"],
     githubUrl: "https://github.com/AdityaBisht07/",
     liveUrl: "https://collab-board-six.vercel.app/",
