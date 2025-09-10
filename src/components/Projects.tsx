@@ -66,7 +66,7 @@ export default function Projects() {
               className="bg-white dark:bg-dark-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden project-card"
             >
               {/* Project Image */}
-              <div className="relative h-48">
+              <div className="relative h-48 overflow-hidden rounded-t-xl">
                 {project.image ? (
                   <Image
                     src={project.image}
