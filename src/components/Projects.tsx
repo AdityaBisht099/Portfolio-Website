@@ -3,6 +3,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiGithub, FiExternalLink, FiX, FiFilter } from 'react-icons/fi'
 import { projects, Project } from '@/utils/data'
@@ -65,10 +66,22 @@ export default function Projects() {
               className="bg-white dark:bg-dark-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden project-card"
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 flex items-center justify-center">
-                <div className="text-4xl font-bold text-primary-600 dark:text-primary-400">
-                  {project.title.split(' ').map(word => word[0]).join('')}
-                </div>
+              <div className="relative h-48">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 flex items-center justify-center">
+                    <div className="text-4xl font-bold text-primary-600 dark:text-primary-400">
+                      {project.title.split(' ').map(word => word[0]).join('')}
+                    </div>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                   <motion.button
                     whileHover={{ scale: 1.1 }}
