@@ -5,7 +5,7 @@ import { skills, Skill, radarSkills } from '@/utils/data'
 import SkillsRadarChart from './SkillsRadarChart'
 
 export default function Skills() {
-  const categories = ['dsa', 'frontend', 'database', 'tools', 'other']
+  const categories = ['dsa', 'frontend', 'database', 'tools', 'aiml', 'other']
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -39,6 +39,7 @@ export default function Skills() {
       frontend: 'Web Development',
       database: 'Database & Storage',
       tools: 'Tools & Version Control',
+      aiml: 'AI & Machine Learning',
       other: 'Other Skills'
     }
     return titles[category] || category
@@ -50,6 +51,7 @@ export default function Skills() {
       frontend: '🌐',
       database: '🗄️',
       tools: '🛠️',
+      aiml: '🤖',
       other: '🚀'
     }
     return icons[category] || '💻'
@@ -180,12 +182,9 @@ export default function Skills() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { name: 'UI/UX Design', icon: '🎨' },
-              { name: 'Agile/Scrum', icon: '📋' },
               { name: 'Problem Solving', icon: '🧩' },
               { name: 'Team Leadership', icon: '👥' },
               { name: 'Code Review', icon: '🔍' },
-              { name: 'Documentation', icon: '📚' },
-              { name: 'Testing', icon: '🧪' },
               { name: 'Performance', icon: '⚡' }
             ].map((skill, index) => (
               <motion.div
@@ -221,7 +220,7 @@ export default function Skills() {
             I'm constantly exploring new technologies and improving my skills. Currently learning:
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            {['Rust', 'WebAssembly', 'Machine Learning', 'Blockchain'].map((tech, index) => (
+            {['Machine Learning', 'A.I.', 'Cloud Computing'].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}

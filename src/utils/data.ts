@@ -12,7 +12,7 @@ export interface Project {
 export interface Skill {
   name: string
   level: number
-  category: 'dsa' | 'frontend' | 'backend' | 'database' | 'tools' | 'other'
+  category: 'dsa' | 'frontend' | 'backend' | 'database' | 'tools' | 'aiml' | 'other'
   icon: string
 }
 
@@ -59,36 +59,36 @@ export const projects: Project[] = [
 
 export const skills: Skill[] = [
   // Programming & DSA
-  { name: "Java", level: 85, category: "dsa", icon: "java" },
-  { name: "Python", level: 80, category: "dsa", icon: "python" },
-  { name: "C++", level: 75, category: "dsa", icon: "cpp" },
-  { name: "Data Structures", level: 90, category: "dsa", icon: "dsa" },
-  { name: "Algorithms", level: 85, category: "dsa", icon: "algo" },
-  { name: "Problem Solving", level: 90, category: "dsa", icon: "problem-solving" },
+  { name: "Java", level: 70, category: "dsa", icon: "java" },
+  { name: "Python", level: 65, category: "dsa", icon: "python" },
+  { name: "C++", level: 58, category: "dsa", icon: "cpp" },
+  { name: "Data Structures", level: 75, category: "dsa", icon: "dsa" },
+  { name: "Algorithms", level: 78, category: "dsa", icon: "algo" },
+  { name: "Problem Solving", level: 73, category: "dsa", icon: "problem-solving" },
   
   // Web Development
-  { name: "HTML", level: 90, category: "frontend", icon: "html" },
-  { name: "CSS", level: 85, category: "frontend", icon: "css" },
-  { name: "JavaScript", level: 85, category: "frontend", icon: "javascript" },
-  { name: "Next.js", level: 80, category: "frontend", icon: "nextjs" },
-  { name: "TailwindCSS", level: 80, category: "frontend", icon: "tailwind" },
-  { name: "React (Basics)", level: 70, category: "frontend", icon: "react" },
-  { name: "REST APIs", level: 80, category: "frontend", icon: "api" },
+  { name: "HTML", level: 85, category: "frontend", icon: "html" },
+  { name: "CSS", level: 80, category: "frontend", icon: "css" },
+  { name: "JavaScript", level: 70, category: "frontend", icon: "javascript" },
+  { name: "Next.js", level: 73, category: "frontend", icon: "nextjs" },
+  { name: "TailwindCSS", level: 72, category: "frontend", icon: "tailwind" },
+  { name: "React (Basics)", level: 75, category: "frontend", icon: "react" },
+  { name: "REST APIs", level: 64, category: "frontend", icon: "api" },
   { name: "Astro (Basics)", level: 60, category: "frontend", icon: "astro" },
   
   // AI & Machine Learning
-  { name: "Python (NumPy, Pandas)", level: 75, category: "other", icon: "python-ml" },
-  { name: "Scikit-learn", level: 70, category: "other", icon: "sklearn" },
-  { name: "TensorFlow Basics", level: 65, category: "other", icon: "tensorflow" },
-  { name: "ML Models", level: 70, category: "other", icon: "ml" },
-  { name: "Data Preprocessing", level: 75, category: "other", icon: "data" },
-  { name: "Regression & Classification", level: 70, category: "other", icon: "ml-algo" },
+  { name: "Python (NumPy, Pandas)", level: 75, category: "aiml", icon: "python-ml" },
+  { name: "Scikit-learn", level: 70, category: "aiml", icon: "sklearn" },
+  { name: "TensorFlow Basics", level: 65, category: "aiml", icon: "tensorflow" },
+  { name: "ML Models", level: 70, category: "aiml", icon: "ml" },
+  { name: "Data Preprocessing", level: 75, category: "aiml", icon: "data" },
+  { name: "Regression & Classification", level: 70, category: "aiml", icon: "ml-algo" },
   
   // Databases
-  { name: "MongoDB", level: 80, category: "database", icon: "mongodb" },
+  { name: "MongoDB", level: 65, category: "database", icon: "mongodb" },
   { name: "MySQL", level: 75, category: "database", icon: "mysql" },
-  { name: "PostgreSQL", level: 70, category: "database", icon: "postgresql" },
-  { name: "Query Optimization", level: 70, category: "database", icon: "optimization" },
+  { name: "PostgreSQL", level: 64, category: "database", icon: "postgresql" },
+  { name: "Query Optimization", level: 61, category: "database", icon: "optimization" },
   
   // Tools & Version Control
   { name: "Git", level: 85, category: "tools", icon: "git" },
@@ -107,79 +107,28 @@ export const skills: Skill[] = [
 
 // Radar chart skills data
 export const radarSkills = [
-  { name: "Problem Solving", level: 95 },
-  { name: "Data Structures", level: 90 },
-  { name: "Algorithms", level: 85 },
-  { name: "Java", level: 85 },
-  { name: "Python", level: 80 },
+  { name: "Problem Solving", level: 85 },
+  { name: "AI/ML", level: 80 },
+  { name: "Algorithms", level: 75 },
+  { name: "Java", level: 75 },
+  { name: "Team Management", level: 70 },
   { name: "Web Development", level: 80 },
 ]
 
 export const experience: Experience[] = [
   {
     id: 1,
-    title: "Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
-    description: [
-      "Developed and maintained 5+ web applications using modern technologies",
-      "Led a team of 3 developers in building enterprise-level solutions",
-      "Implemented CI/CD pipelines and improved deployment efficiency by 40%",
-      "Solved complex business problems through innovative technical solutions"
-    ],
-    technologies: ["React", "Node.js", "MongoDB", "AWS", "Docker", "Git"]
-  },
-  {
-    id: 2,
-    title: "Frontend Developer",
-    company: "Digital Innovations Ltd.",
-    period: "2021 - 2022",
-    description: [
-      "Built responsive user interfaces for 3 major client projects",
-      "Optimized application performance resulting in 30% faster load times",
-      "Collaborated with UX/UI designers to implement pixel-perfect designs",
-      "Mentored junior developers and conducted code reviews"
-    ],
-    technologies: ["JavaScript", "React", "Vue.js", "TailwindCSS", "Webpack"]
-  },
-  {
-    id: 3,
-    title: "Backend Developer",
-    company: "Startup Ventures",
-    period: "2020 - 2021",
-    description: [
-      "Developed RESTful APIs serving 10,000+ daily requests",
-      "Implemented authentication and authorization systems",
-      "Designed and optimized database schemas for scalability",
-      "Integrated third-party services and payment gateways"
-    ],
-    technologies: ["Python", "Django", "PostgreSQL", "Redis", "Stripe API"]
-  },
-  {
-    id: 4,
     title: "Freelance Developer",
     company: "Self-Employed",
-    period: "2019 - 2020",
+    period: "2023 - Present",
     description: [
-      "Completed 15+ client projects across various industries",
-      "Built custom solutions for small businesses and startups",
-      "Provided technical consulting and problem-solving expertise",
-      "Maintained 100% client satisfaction rate"
+      "Developed custom web applications and solutions for various clients",
+      "Built responsive websites using modern technologies like Next.js and React",
+      "Implemented AI-augmented workflows to enhance development efficiency",
+      "Provided technical consulting and problem-solving expertise for startups and small businesses",
+      "Maintained high client satisfaction through quality deliverables and timely communication"
     ],
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress", "jQuery"]
-  },
-  {
-    id: 5,
-    title: "Hackerrank Certification",
-    company: "Hackerrank",
-    period: "2023",
-    description: [
-      "Certified in problem solving and algorithmic thinking",
-      "Demonstrated strong coding skills across multiple programming languages",
-      "Completed various coding challenges and assessments",
-      "Applied problem-solving techniques to real-world development scenarios"
-    ],
-    technologies: ["Problem Solving", "Algorithms", "Data Structures", "Python", "JavaScript"]
+    technologies: ["Next.js", "React", "JavaScript", "Python", "MongoDB", "TailwindCSS", "Git"]
   }
 ]
 

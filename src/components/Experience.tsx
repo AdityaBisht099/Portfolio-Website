@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FiCalendar, FiMapPin, FiExternalLink } from 'react-icons/fi'
+import { FiCalendar } from 'react-icons/fi'
 import { experience } from '@/utils/data'
 
 export default function Experience() {
@@ -128,19 +128,19 @@ export default function Experience() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Performance Optimization",
-                description: "Improved application performance by 60% through code optimization and caching strategies",
-                icon: "⚡"
+                title: "Client Satisfaction",
+                description: "Maintained 100% client satisfaction rate across all freelance projects with timely delivery",
+                icon: "⭐"
               },
               {
-                title: "Team Leadership",
-                description: "Led a team of 8 developers and successfully delivered 15+ projects on time",
-                icon: "👥"
+                title: "AI-Enhanced Development",
+                description: "Implemented AI-augmented workflows to boost development efficiency and code quality",
+                icon: "🤖"
               },
               {
-                title: "Innovation Award",
-                description: "Received company innovation award for developing a new microservices architecture",
-                icon: "🏆"
+                title: "Problem Solving Excellence",
+                description: "Successfully solved complex technical challenges for startups and small businesses",
+                icon: "🧩"
               }
             ].map((achievement, index) => (
               <motion.div
@@ -160,36 +160,6 @@ export default function Experience() {
           </div>
         </motion.div>
 
-        {/* Education Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20 bg-gray-50 dark:bg-dark-800 rounded-xl p-8"
-        >
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
-            Education & Certifications
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-dark-700 rounded-lg p-6 shadow-lg">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                Bachelor's in Computer Science
-              </h4>
-              <p className="text-primary-600 dark:text-primary-400 mb-2">University Name</p>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">2014 - 2018</p>
-            </div>
-            
-            <div className="bg-white dark:bg-dark-700 rounded-lg p-6 shadow-lg">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                AWS Certified Developer
-              </h4>
-              <p className="text-primary-600 dark:text-primary-400 mb-2">Amazon Web Services</p>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">2022</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )
