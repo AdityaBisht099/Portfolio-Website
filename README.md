@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, TailwindC
 - **Dark/Light Mode**: Toggle between dark and light themes
 - **Responsive**: Fully responsive design that works on all devices
 - **Interactive Elements**: Custom cursor, hover effects, and smooth transitions
-- **Smooth Scrolling**: Seamless navigation between sections
+- **Smooth Scrolling**: Seamless navigation between sections 
 - **Contact Form**: Functional contact form with validation
 - **Project Showcase**: Interactive project cards with modal details
 - **Skills Visualization**: Animated progress bars and skill categories 
