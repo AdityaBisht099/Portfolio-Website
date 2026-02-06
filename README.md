@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, TailwindC
 - **Smooth Scrolling**: Seamless navigation between sections
 - **Contact Form**: Functional contact form with validation
 - **Project Showcase**: Interactive project cards with modal details
-- **Skills Visualization**: Animated progress bars and skill categories
+- **Skills Visualization**: Animated progress bars and skill categories 
 - **Experience Timeline**: Beautiful timeline layout for work experience
 - **SEO Optimized**: Meta tags and structured data for better SEO
 
